@@ -1,16 +1,16 @@
 try:
     # Accept two numbers from the user
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
+    first_num = float(input("Enter the first number: "))
+    second_num = float(input("Enter the second number: "))
 
     # Display before swapping
-    print(f"Before swapping: num1 = {num1}, num2 = {num2}")
+    print(f"Before swapping: first_num = {first_num}, second_num = {second_num}")
 
     # Swap using tuple unpacking
-    num1, num2 = num2, num1
+    first_num, second_num = second_num, first_num
 
     # Display after swapping
-    print(f"After swapping: num1 = {num1}, num2 = {num2}")
+    print(f"After swapping: first_num = {first_num}, second_num = {second_num}")
 
 except ValueError:
     print("Error: Please enter valid numeric values.")
